@@ -22,8 +22,18 @@
         <p>Use the image as a sample to fill in. The password can be found in the file's environment variable of the docker-compose.yml</p>
         ![image](https://github.com/user-attachments/assets/d71baba3-3a25-4d41-a8eb-6937acaa74d7)
         <li>Create a new table:</li>
-        <p>For example table_1 with ID(integer not null) and text(text).<p>
+        <p>For example test_table with ID(integer not null) and text(text).<p>
         ![image](https://github.com/user-attachments/assets/551b29a6-9d07-49d3-a069-5f8e884036fd)
+        <li>Edit the table, add new entry:</li>
+        <p>For example, add some strings: (1, 'first'), (2, 'second').<p>
+        ![image](https://github.com/user-attachments/assets/551b29a6-9d07-49d3-a069-5f8e884036fd)
+        <li>Stop the docker-compose:</li>
+        <pre><code>docker-compose down</code></pre>
+        <li>Build and start the containers:</li>
+        <pre><code>docker-compose up</code></pre>
+        <li>Login the UI Adminer (look at step 1)</li>
+        <li>Go to test_table. </li>
+        <p>If the table contains records that were created during the previous container run, it means that the database is persistent in this build.</p>
     </ol>
 </body>
 </html>
